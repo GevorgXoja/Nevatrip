@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/calc.js"></script>
+</head>
+<body>
+<select name="route" id="route" onchange="getSelectionValue()">
+  <option value="Выберите направление">Выберите направление</option>
+  <option value="из A в B">из A в B</option>
+  <option value="из B в A">из B в A</option>
+  <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+</select>
+<hr>
+<label for="time">Выберите время</label>
+<select name="time" id="time" onchange="selectValue()">
+</select>
+<select name="time" id="time-1">
+</select>
+<hr>
+<label for="num">Количество билетов</label>
+<input id="num">
+<button onclick="sum() ">Посчитать</button>
+<p id="text-1"></p>
+<p id="text-2"></p>
+<p id="text-3"></p>
+</body>
+</html>
